@@ -16,8 +16,8 @@
 # *****************************************************************
 set -ex
 
-mkdir -p $CONDA_PREFIX/include
-find /usr/include/openssl -name *.h -exec ln -s "{}" "$CONDA_PREFIX/include/" ';'
+mkdir -p $CONDA_PREFIX/include/openssl
+find /usr/include/openssl -name *.h -exec ln -s "{}" "$CONDA_PREFIX/include/openssl" ';'
 
 mkdir -p $CONDA_PREFIX/lib
 ln -s /usr/lib64/libcrypto.so $CONDA_PREFIX/lib
