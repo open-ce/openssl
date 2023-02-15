@@ -16,6 +16,13 @@ about:
   dev_url: https://github.com/openssl/openssl
   doc_url: https://www.openssl.org/docs/man1.1.1/
 
+test:
+  requires:
+     - python
+     - {{ compiler('c') }}
+  files:
+     - tests/testfips.c
+
 extra:
   recipe-maintainers:
     - open-ce/open-ce-dev-team
