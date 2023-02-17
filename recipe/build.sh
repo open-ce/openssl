@@ -21,7 +21,12 @@ find /usr/include/openssl -name *.h -exec ln -s "{}" "$CONDA_PREFIX/include/open
 
 mkdir -p $CONDA_PREFIX/lib
 ln -s /usr/lib64/libcrypto.so $CONDA_PREFIX/lib
+ln -s /usr/lib64/libcrypto.so $CONDA_PREFIX/lib/libcrypto.so.1
+ln -s /usr/lib64/libcrypto.so $CONDA_PREFIX/lib/libcrypto.so.1.1
+
 ln -s /usr/lib64/libssl.so $CONDA_PREFIX/lib
+ln -s /usr/lib64/libssl.so $CONDA_PREFIX/lib/libssl.so.1
+ln -s /usr/lib64/libssl.so $CONDA_PREFIX/lib/libssl.so.1.1
 
 mkdir -p $CONDA_PREFIX/bin
 ln -s /usr/bin/openssl $CONDA_PREFIX/bin
