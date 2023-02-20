@@ -8,6 +8,10 @@ package:
 build:
   number: 1
 
+requirements:
+  run:
+    - zlib
+
 about:
   home: https://www.openssl.org/
   license: OpenSSL
