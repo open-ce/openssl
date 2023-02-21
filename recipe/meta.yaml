@@ -11,6 +11,7 @@ build:
 requirements:
   run:
     - zlib
+    - ca-certificates
 
 about:
   home: https://www.openssl.org/
