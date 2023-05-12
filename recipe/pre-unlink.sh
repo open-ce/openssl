@@ -19,3 +19,4 @@ set -ex
 rm -rf $CONDA_PREFIX/include/openssl
 rm -rf $CONDA_PREFIX/bin/openssl
 rm -fv $CONDA_PREFIX/lib/libssl.* $CONDA_PREFIX/lib/libcrypto.* $CONDA_PREFIX/lib/.libssl.* $CONDA_PREFIX/lib/.libcrypto.*
+rm -fv $CONDA_PREFIX/lib/pkgconfig/openssl.pc $CONDA_PREFIX/lib/pkgconfig/libcrypto.pc $CONDA_PREFIX/lib/pkgconfig/libssl.pc

@@ -19,3 +19,4 @@ set -ex
 ln -sv /usr/include/openssl $CONDA_PREFIX/include/openssl
 ln -sv /usr/bin/openssl $CONDA_PREFIX/bin/openssl
 ln -sv /usr/lib64/lib{ssl,crypto}.*  /usr/lib64/.lib{ssl,crypto}.* $CONDA_PREFIX/lib/
+ln -sv /usr/lib64/pkgconfig/lib{ssl,crypto}.pc /usr/lib64/pkgconfig/openssl.pc $CONDA_PREFIX/lib/pkgconfig/
