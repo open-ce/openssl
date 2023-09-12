@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 build:
-  number: 2
+  number: 0
   string: opence_h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}
 
 requirements:
