@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 build:
-  number: 2
-  string: fips_h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}
+  number: 3
+  string: opence_h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}
 
 requirements:
   run:
